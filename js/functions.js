@@ -5,7 +5,7 @@ function get_stock_num(min, max) {
   return rand_num;
 }
 
-// stock_numbers配列に要素をセットする関数。
+// stock_numbers配列に要素をセットする
 function set_numbers(min, max) {
   for (i = min; i <= max; i++) {
     stock_numbers.push(i);
