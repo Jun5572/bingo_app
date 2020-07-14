@@ -7,7 +7,8 @@ const reset = "RESET";
 let btn_start = document.querySelector('[data-js="start"]');
 let btn_stop = document.querySelector('[data-js="stop"]');
 let elm_result = document.querySelector('[data-js="result"]');
-let elm_usd = document.querySelector('[data-js="usd_nums"]')
+let elm_usd = document.querySelector('[data-js="usd_nums"]');
+let elm_remain = document.querySelector('[data-js="remain"]');
 let stock_numbers = [];
 let used_numbers = [];
 
@@ -44,7 +45,9 @@ btn_stop.addEventListener("click", function(){
     stock_numbers = stock_numbers.filter(function(val){
       return val != num;
     });
+    console.log(stock_numbers.length);
     line_up_used_nums();
+    elm_remain.innerText = stock_numbers.length;
   }
   if (stock_numbers.length === 0) {
     btn_start.innerText = reset;
