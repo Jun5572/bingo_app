@@ -30,3 +30,14 @@ function stop_roulette() {
   clearInterval(roulette);
   elm_result.innerHTML = get_stock_num(MIN, MAX);
 }
+
+  // stopボタン押下ごとに処理が走る
+  // appendしたい要素の形 <span class="usd_num">7</span>
+  // 上記要素がused_numbers配列のindex分増えていく
+function line_up_used_nums(){
+  let tmp = '';
+  for(i=0; i<used_numbers.length; i++ ){
+    tmp += `<span class="usd_num">${used_numbers[i]}</span>`;
+  }
+  elm_usd.innerHTML = tmp;
+}

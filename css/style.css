@@ -97,6 +97,9 @@ button:hover{
     background: radial-gradient(#fff, 80%, #444);
 }
 
+/* .btn_start.is_show.reset{
+    background-color: crimson;
+} */
 
 /* スマホ */
 @media screen and (max-width: 480px){
