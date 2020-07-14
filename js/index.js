@@ -8,7 +8,6 @@ let btn_start = document.querySelector('[data-js="start"]');
 let btn_stop = document.querySelector('[data-js="stop"]');
 let elm_result = document.querySelector('[data-js="result"]');
 let elm_usd = document.querySelector('[data-js="usd_nums"]')
-// let roulette;
 let stock_numbers = [];
 let used_numbers = [];
 
