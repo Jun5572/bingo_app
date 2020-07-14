@@ -10,6 +10,7 @@ function set_numbers(min, max) {
   for (i = min; i <= max; i++) {
     stock_numbers.push(i);
   }
+  elm_remain.innerText = stock_numbers.length;
 }
 
 // 数字のルーレット表現させるための関数
