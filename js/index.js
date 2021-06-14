@@ -1,8 +1,9 @@
 const MIN = 1;
-const MAX = 10;
+const MAX = 75;
 const start = "START";
 const stop = "STOP";
 const reset = "RESET";
+
 
 let btn_start = document.querySelector('[data-js="start"]');
 let btn_stop = document.querySelector('[data-js="stop"]');
